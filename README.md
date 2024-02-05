@@ -11,12 +11,8 @@ The **ReactJS Todo List App** is a simple yet powerful task management tool. It 
 ## Features
 
 - **Responsive Design**: The app works seamlessly on desktops, tablets, and mobile devices.
-- **Add and Edit Tasks**: Easily add new tasks and update existing ones.
-- **Checkboxes**: Mark tasks as complete or incomplete with a single click.
-- **Drag-and-Drop Reordering**: Arrange tasks in the order that suits you best.
-- **Search and Filter**: Quickly find specific tasks using the search bar.
+- **Add and Delete Tasks**: Easily add new tasks and delete existing ones.
 - **Local Storage**: Your tasks persist even after closing the browser.
-- **Customizable Styling**: Tailor the app's appearance to your liking.
 
 ## Installation
 
