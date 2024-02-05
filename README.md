@@ -61,7 +61,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## Acknowledgments
 
 - Thanks to the [Vite React App](https://vitejs.dev/guide/) team for the awesome boilerplate.
-- Background SVG [](https://app.haikei.app/)
+- Background SVG [haikei-app](https://app.haikei.app/)
 
 ---
 
