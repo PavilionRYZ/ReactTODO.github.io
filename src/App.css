@@ -1,0 +1,120 @@
+*{
+  margin: 0;
+  padding: 0;
+  /* border: 1px solid red ; */
+}
+body{
+  font-family: 'Roboto', sans-serif;
+  margin-top: 100px;
+  /* background: rgb(36,0,33);
+  background: linear-gradient(90deg,
+ rgba(36,0,33,1) 0%,
+  rgba(95,9,121,1) 25%,
+   rgba(166,0,255,1) 100%); */
+   background-image: url('./assets/stacked-waves-haikei.svg');
+   background-size: cover; /* Adjust as needed */
+   background-position: center;
+   background-repeat: no-repeat;
+}
+
+nav{
+  background-color: #f5f2f2;
+  color: rgb(224, 8, 152);
+  box-shadow:
+  2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+  6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+  12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+  22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+  41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+  100px 100px 80px rgba(0, 0, 0, 0.07);
+  padding: 10px;
+  text-align: center;
+  font-size: 4rem;
+  font-weight: bold;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+}
+.container{
+  width: 70%;
+  margin:auto;
+  margin-top: 10rem;
+  min-height: 100vh;
+  padding: 4vmax 8vmax;
+  box-sizing: border-box;
+  backdrop-filter: blur(4px) saturate(131%);
+    -webkit-backdrop-filter: blur(4px) saturate(131%);
+    background-color: rgba(17, 25, 40, 0.7);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+}
+.container > h1{
+  color: #f5f2f2;
+  font-size: 3rem;
+  margin-bottom: 20px;
+  text-align: center;
+
+}
+.container > form{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+input ,textarea ,button{
+  margin: 10px 0;
+  padding: 20px;
+  font-size: 1.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+button{
+  background-color: #f5f2f2;
+  color: rgb(224, 8, 152);
+  font-size: 2rem;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  padding: 10px 20px;
+}
+button:hover{
+  background-color: #e20888;
+  color: rgb(238, 236, 238);
+}
+.task{
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+  background-color: #fcfbfbad;
+    
+  padding: 20px;
+  border-radius: 10px;
+}
+.task > div{ 
+  width: 100%;
+}
+.task >div>p{
+  font-size: 1.5rem;
+  color: #0f0f0f;
+}
+.task span{
+  color: #535252;
+  font-size: 1.2rem;
+}
+.task button{
+  border-radius: 100%;
+  width: 30px;
+  height: 40px;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.task button:hover{
+  background-color: #e20888;
+  color: rgb(238, 236, 238);
+  cursor: pointer;
+}
