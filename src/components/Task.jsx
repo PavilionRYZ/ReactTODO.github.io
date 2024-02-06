@@ -7,8 +7,8 @@ const Task = ({ title, description ,deleteTask,index }) => {
     return (
         <div className='task'>
             <div>
-                <p>{title}</p>
-                <span>{description}</span>
+                <p>Title:{title}</p>
+                <span>Description:{description}</span>
             </div>
             <button onClick={()=>deleteTask(index)}>&#10060;</button>
         </div>

@@ -18,7 +18,7 @@ const Home = () => {
         setTitle("");
         setDescription("");
     }
-    
+
     // delete task from the list of tasks.
     const deleteTask = (index)=>{
         const filteredArray = tasks.filter((item,i)=>{
@@ -27,10 +27,19 @@ const Home = () => {
             setTask(filteredArray);
           }
 
+          // Effect to save data to local storage whenever data changes
           useEffect(()=>{
                 localStorage.setItem("tasks",JSON.stringify(tasks))
             },[tasks]
-          )
+          );
+
+          // Effect to retrieve data from local storage when the component mounts
+            useEffect(()=>{
+                const data = localStorage.getItem("tasks");
+                if(data){
+                    setTask(JSON.parse(data));
+                }
+            },[]);// The empty dependency array ensures that this effect runs only once when the component mounts
 
   return (
     <div className='container'>
