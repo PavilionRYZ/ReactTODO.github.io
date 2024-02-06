@@ -4,7 +4,9 @@ import React, { useEffect, useState } from 'react'
 import Task from './Task'
 
 const Home = () => {
-    const initialArray = localStorage.getItem("task")?JSON.parse(localStorage.getItem("tasks")):[];
+    const initialArray = localStorage.getItem("tasks")
+    ?JSON.parse(localStorage.getItem("tasks")):[];
+    
     const [tasks,setTask] = useState(initialArray);
     const [title,setTitle] =  useState("");
     const [description,setDescription] = useState("");
@@ -18,6 +20,8 @@ const Home = () => {
         setTitle("");
         setDescription("");
     }
+    //This code defines a function submitHandler that prevents the default form submission behavior, adds a new 
+    //task to the tasks list, and then clears the title and description inputs.
 
     // delete task from the list of tasks.
     const deleteTask = (index)=>{
@@ -26,7 +30,10 @@ const Home = () => {
             })
             setTask(filteredArray);
           }
+          //This code snippet defines a function called deleteTask that removes a task from a list of tasks by filtering the tasks array to exclude the task at the specified index,
+          // and then updating the tasks array using the setTask function.
 
+          
           // Effect to save data to local storage whenever data changes
           useEffect(()=>{
                 localStorage.setItem("tasks",JSON.stringify(tasks))
